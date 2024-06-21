@@ -1,5 +1,7 @@
 /*console.log("Hello World ! ça va");
 
+//Les conditions
+
 //Test avec booléen
 let motTapeOk = true;
 
@@ -46,7 +48,7 @@ Ici, je teste motUtilisateur :
 */
 
 //Exercice:
-const listeMots = ["Cachalot", "Pétunia", "Serviette"];
+/*const listeMots = ["Cachalot", "Pétunia", "Serviette"];
 let score = 0;
 let motTapeUtilisateur = prompt("Entrez le mot: " + listeMots[0]);
 
@@ -78,4 +80,52 @@ if(motTape === listeMots[2]){
     console.log("Vous avez fait une faute de frappe !");
 }
 
-console.log("Votre score est de : " + score + " sur 3")
+console.log("Votre score est de : " + score + " sur 3");*/
+
+//Les Boucles
+//La boucle For
+/*let compteur;
+for(compteur = 0; compteur < 3; compteur++){/* entre parenthèse ce sont mes instructions */
+/*console.log(compteur);
+}*/
+
+//La boucle While
+/*let i = 0;
+while(i < 3)
+    {
+        console.log(i);
+        i++;
+    }*/
+
+/*
+Dans le code ci-dessus :
+-on déclare la variable i, que l’on initialise à zéro, avant la boucle ;
+-le while ne contient que la condition d’arrêt : tant que i est plus petit que 3 ;
+-on incrémente i (i va gagner +1 à chaque tour de boucle). 
+Attention ! Si vous oubliez d’augmenter la valeur de i, alors la condition i < 3 sera toujours vraie, et vous aurez une boucle infinie ! Cela peut même faire planter votre navigateur !
+*/
+
+//Exercice:
+const listeMots = ["Cachalot", "Pétunia", "Serviette"];
+let i;
+let motUtilisateurTape;
+let score = 0;
+const listePhrases = ["Pas de panique !", "La vie, l'univers et le reste", "Merci pour le poisson"];
+let choixPhraseMots = prompt("Voulez vous la liste de phrases ou la liste de mots ? ");
+
+while (choixPhraseMots !== "mots" && choixPhraseMots !== "phrases") {
+    console.log(choixPhraseMots);
+}
+
+
+for (i = 0; i < listeMots.length; i++) {
+    let motUtilisateurTape = prompt("Entrez le mot : " + listeMots[i]);
+    if (motUtilisateurTape === listeMots[i]) {
+        console.log("Vous avez tapé le bon mot ! ");
+        score++;
+    }
+}
+console.log("Votre score est de : " + score + " sur " + listeMots.length);
+
+
+
