@@ -12,25 +12,7 @@ function afficherResultat(score,nbreTotalMotsProposes)
     // console.log("Votre score est de " + score + " sur " + nbreTotalMotsProposes);
 }
 
-// function choisirPhrasesOuMots()
-// {   
-//     let choix = prompt("Voulez-vous la liste des mots ou celle des phrases ?"); 
-//     while(choix !== "mots" && choix !== "phrases"){
-//     choix = prompt("Vous devez choisir entre 'mots' et 'phrases'?");  
-//     }
-//     return choix;
-// }
 
-// function lancerBoucleDeJeu(listePropositions)
-// {
-//     for(let i = 0; i < listePropositions.length; i++){
-//          motTapeUtilisateur = prompt("Entrez le mot: " + listePropositions[i]);
-//         if(motTapeUtilisateur === listePropositions[i]){
-//             score++;
-//         }
-//     }
-//     return score;
-// }
 
 function afficherProposition (proposition) {
     let zoneProposition = document.querySelector(".zoneProposition");
@@ -91,17 +73,9 @@ function gererFormulaire (scoreEmail) {
 function lancerJeu()
 {
     initAddEventListenerPopup();
-    // let choix = choisirPhrasesOuMots();
+    
     let score = 0;
-    // nbreTotalMotsProposes = 0;
-
-    // if(choix === "mots"){
-    //     score = lancerBoucleDeJeu(listeMots);
-    //     nbreTotalMotsProposes = listeMots.length;
-    // } else {
-    //     score = lancerBoucleDeJeu(listePhrases);
-    //     nbreTotalMotsProposes = listePhrases.length;
-    // }
+    
     let i = 0;
     let listePropisition = listeMots;
     let monBoutonValider = document.getElementById("btnValideMot");

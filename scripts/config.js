@@ -1,4 +1,4 @@
 // Liste des mots et phrases utilisés pour le jeu
-const listeMots = ["Cachalot", "Pétunia", "Serviette"];
-const listePhrases = ["Pas de panique !", "La vie, l'univers et le reste", "Merci le poisson"];
+const listeMots = ["Luthière", "Panthère", "Poltergeist"];
+const listePhrases = ["Coucou, chérie !", "La Vie, c'est comme une boîte de chocolats : On ne sait jamais sur quoi on va tomber", "Je suis ton père ! "];
 
