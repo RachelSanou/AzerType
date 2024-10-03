@@ -41,4 +41,11 @@ function initAddEventListenerPopup() {
             cacherPopup()
         }
     })
+
+   // Ajout de l'événement pour le bouton "Rejouer"
+   let btnRejouer = document.getElementById("btnRejouerPopup");
+   btnRejouer.addEventListener("click", () => {
+       location.reload(); // Recharge la page
+   });
+
 }

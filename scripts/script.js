@@ -6,6 +6,7 @@ function updateChronometre() {
   document.getElementById("secondes").textContent = sec; // Met à jour le texte des secondes
 }
 
+
 function afficherResultat(score, nbreTotalMotsProposes) {
   // Récupération de la zone dans laquelle on va écrire le score
   let recupererSpanZoneScore = document.querySelector(".zoneScore span");
